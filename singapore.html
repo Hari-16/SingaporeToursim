@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Tourism</title>
+    <style>
+        #main{
+            width: 65%;
+            margin: auto;
+            height: 520px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgb(153, 40, 125);
+            border: 5px double yellow;
+            border-radius: 10px;
+        }
+        label{
+            color: rgb(1, 171, 1);
+            font-weight: bold;
+        }
+        table{
+            width: 100%;
+        }
+        table,tr,td{
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+            color: #ffffff;
+            padding: 5px;
+            font-family:sans-serif;
+            border-radius: 5px;
+            border: 5px double rgb(23, 16, 246);
+            background-color: rgb(51, 187, 76);
+        }
+        button{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            border: groove;
+            border-radius: 10px;
+            font-size: medium;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgb(2, 162, 255);
+        }
+        button:hover{
+            padding: 10px;
+            border: groove;
+            border-radius: 10px;
+            font-weight: bolder;
+            color: white;
+            background-color: green;
+        }
+        #result{
+            color: white;
+            text-align: center;
+            background-color: rgb(255, 0, 187);
+            font-weight: bold;
+            padding: 7px;
+            font-size: larger;
+            border-radius: 15px;
+            border: 5px double rgb(0, 4, 128);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="" onsubmit="final()">
+            <table>
+                <h2>Singapore Tourism</h2>
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input type="text" name="" id="" style="width: 95%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Phone no</label></td>
+                    <td><input type="tel" name="" id="" style="width: 95%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email ID</label></td>
+                    <td><input type="email" name="" id="" style="width: 95%;"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Number Of Persons</label></td>
+                    <td><input type="tel" name="" id="persons" style="width: 95%;" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Prefer Stay</label></td>
+                    <td>
+                        <input type="radio" name="radio" id="yes" onclick="undisable()">
+                        <label for="">Yes</label>
+                        <input type="radio" name="radio" id="no" onclick="disable()" checked>
+                        <label for="">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Number Of Days Stay</label></td>
+                    <td><input type="tel" name="" style="width: 95%;" id="days" disabled required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Places You Would Like To Visit</label></td>
+                    <td>
+                        <input type="checkbox" name="" id="pilgrimage" value="350">
+                        <label for="pilgrimage">Places Of Pilgrimage</label><br>
+                        <input type="checkbox" name="" id="heritage" value="430">
+                        <label for="heritage">Places Of Heritage</label><br>
+                        <input type="checkbox" name="" id="hills" value="780">
+                        <label for="hills">Hills</label><br>
+                        <input type="checkbox" name="" id="falls" value="1200">
+                        <label for="falls">Falls</label><br>
+                        <input type="checkbox" name="" id="beach" value="270">
+                        <label for="beach">Beach</label><br>
+                        <input type="checkbox" name="" id="adventure" value="4500">
+                        <label for="adventure">Places Of Adventures</label>
+                    </td>
+                </tr>
+            </table><br>
+            <button>Calculate Cost</button>
+        </form>
+        <p id="result">Please Fill Above Details For Booking</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
